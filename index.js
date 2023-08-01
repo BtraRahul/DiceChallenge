@@ -1,3 +1,5 @@
+document.querySelector("button").addEventListener("click", setAndReturnWinner);
+
 function setAndReturnWinner() {
   var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
   var randomNumber2 = Math.floor(Math.random() * 6) + 1;
@@ -13,9 +15,11 @@ function setAndReturnWinner() {
   else if (randomNumber1 < randomNumber2)
     document.querySelectorAll("h1")[0].textContent = "Player 2 Wins";
   else document.querySelectorAll("h1")[0].textContent = "Draw";
+
+  document.querySelector("button").textContent="Reset";
 }
 
-setAndReturnWinner();
+// setAndReturnWinner();
 // function selectImage(className, num) {
 //   if (num == "1")
 //     document
