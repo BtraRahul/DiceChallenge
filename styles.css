@@ -45,27 +45,33 @@ button {
   width: 50%;
   background-color: #4ecca3;
 }
-.btn {
+/* .btn {
   --bs-btn-active-bg: #4ecca3;
   --bs-btn-active-border-color: #4ecca3;
   color: #4ecca3;
   border-color: #4ecca3;
 }
 
-:hover.btn {
+.btn:hover {
   color: rgb(0, 0, 0);
   border-color: #4ecca3;
   background-color: #4ecca3;
 }
+:active.btn {
+  background-color: #4ecca3;
+  border-color: #4ecca3;
+} */
 
 /* better way */
-/* button {
+button {
   margin-top: 20px;
   width: 50%;
-  background-color: ;
+  border-color: #4ecca3 !important;
+  background-color: #4ecca3;
 }
 .btn-outline-info,
 .btn-outline-info:visited {
+  --bs-btn-hover-bg: #4ecca3;
   color: #4ecca3;
   border-color: #4ecca3 !important;
   background-color: transparent;
@@ -76,4 +82,4 @@ button {
   color: rgb(0, 0, 0);
   border-color: #4ecca3;
   background-color: #4ecca3 !important;
-} */
+}
